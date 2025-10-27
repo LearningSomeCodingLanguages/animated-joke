@@ -19,3 +19,18 @@ document.getElementById("showPunchline").addEventListener("click", function() {
     punchline.style.color = "#2e8b57";
   }, 1500);
 });
+const Jork = document.getElementById('Jork');
+
+// Fade in on load
+myImage.classList.add('fade-in');
+
+// Set a timeout to start the fade-out after the image has been visible for a while
+setTimeout(() => {
+  myImage.classList.remove('fade-in'); // Remove the class for fading in
+  myImage.classList.add('fade-out');  // Add the class for fading out
+}, 2000); // Wait 2000 milliseconds (2 seconds)
+
+// Set a timeout to remove the image from the DOM after the fade-out is complete
+setTimeout(() => {
+  myImage.remove();
+}, 4000); // Wait an additional 2 seconds (2s fade-in + 2s display + 2s fade-out)

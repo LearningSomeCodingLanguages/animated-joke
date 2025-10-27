@@ -1,6 +1,6 @@
 document.getElementById("showPunchline").addEventListener("click", function() {
   // Play the audio
-  const audio = document.getElementById("jokeAudio");
+  const audio = document.getElementById("calling");
   audio.play();
 
   // Change HTML

@@ -34,3 +34,23 @@ document.getElementById("showPunchline").addEventListener("click", function() {
     Jork.remove();
   }, 4000); // Wait an additional 2 seconds (2s fade-in + 2s display + 2s fade-out)
 });
+document.getElementById("resetButton").addEventListener("click", function() {
+  // Reset the punchline visibility
+  document.getElementById("punchline").classList.add("hidden");
+  
+  // Reset the image source
+  document.getElementById("jokeImage").src = "idk.png"; // Original image
+  
+  // Reset the background color
+  document.body.style.backgroundColor = "#f0f8ff"; // Original background color
+  
+  // Reset the John Pork image
+  const Jork = document.getElementById('Jork');
+  Jork.classList.remove('fade-in');
+  Jork.classList.add('fade-out');
+  
+  // Optionally, you can remove the image after fading out
+  setTimeout(() => {
+    Jork.remove();
+  }, 2000); // Wait for fade-out to complete
+});

@@ -36,6 +36,14 @@ button:hover {
   color: #2e8b57;
   transition: transform 1s, color 1s;
 }
+#showPunchline {
+    visibility: visible; /* Initially visible */
+}
+
+#showPunchline.hidden {
+    visibility: hidden; /* Make the button invisible */
+}
+
 
 /* Bouncing Element */
 @keyframes bounce {

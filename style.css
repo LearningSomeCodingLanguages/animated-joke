@@ -61,6 +61,7 @@ button:hover {
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Adjust for the image's width */
   top: 100px; /* Position it below the button */
+  pointer-events: none; /* This will allow clicks to pass through */
 }
 
 #Jork.fade-in {

@@ -33,6 +33,26 @@ button:hover {
   color: #2e8b57;
   transition: transform 1s, color 1s;
 }
+
+/* Bouncing Element */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px); /* Adjust the height of the bounce */
+  }
+  60% {
+    transform: translateY(-15px); /* A smaller bounce */
+  }
+}
+.bounce {
+  animation-name: bounce;
+  animation-duration: 2s; /* Duration of the animation */
+  animation-timing-function: ease; /* Easing function */
+  animation-iteration-count: infinite; /* Repeat the animation */
+}
+
 #Jork {
   opacity: 0;
   transition: opacity 2s ease-in-out;

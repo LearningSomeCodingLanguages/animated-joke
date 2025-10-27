@@ -57,20 +57,20 @@ button:hover {
 }
 
 #Jork {
-  opacity: 0;
-  transition: opacity 2s ease-in-out;
-  display: block; /* Ensures the image takes up space */
-  position: absolute; /* Position the image absolutely */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Adjust for the image's width */
-  top: 1500px; /* Position it below the button */
-  pointer-events: none; /* This will allow clicks to pass through */
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    display: none; /* Initially hidden */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 400px; /* Position the image 400px from the top */
 }
 
 #Jork.fade-in {
-  opacity: 1;
+    opacity: 1;
+    display: block; /* Ensure it takes up space when visible */
 }
 
 #Jork.fade-out {
-  opacity: 0;
+    opacity: 0;
 }

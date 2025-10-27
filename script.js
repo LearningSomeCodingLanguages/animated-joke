@@ -19,7 +19,7 @@ document.getElementById("showPunchline").addEventListener("click", function() {
     punchline.style.color = "#2e8b57";
   }, 1500);
 });
-const Jork = document.getElementById('Jork');
+const Jork = document.getElementById('showPunchline');
 
 // Fade in on load
 myImage.classList.add('fade-in');

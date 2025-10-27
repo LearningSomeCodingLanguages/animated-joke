@@ -38,10 +38,10 @@ button:hover {
   transition: opacity 2s ease-in-out; 
 }
 
-#myImage.fade-in {
+#Jork.fade-in {
   opacity: 1;
 }
 
-#myImage.fade-out {
+#Jork.fade-out {
   opacity: 0; 
 }

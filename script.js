@@ -1,4 +1,8 @@
 document.getElementById("showPunchline").addEventListener("click", function() {
+  // Play the audio
+  const audio = document.getElementById("jokeAudio");
+  audio.play();
+
   // Change HTML
   document.getElementById("punchline").classList.remove("hidden");
 
@@ -27,5 +31,5 @@ document.getElementById("showPunchline").addEventListener("click", function() {
   setTimeout(() => {
     Jork.classList.remove('fade-in'); // Remove the class for fading in
     Jork.classList.add('fade-out');  // Add the class for fading out
-  }, 10000); // Wait 2000 milliseconds (2 seconds)
+  }, 2000); // Wait 2000 milliseconds (2 seconds)
 });

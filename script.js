@@ -6,7 +6,7 @@ document.getElementById("showPunchline").addEventListener("click", function() {
   document.body.style.backgroundColor = "#ffe4b5";
 
   // Change image
-  document.getElementById("jokeImage").src = "punchline.png";
+  document.getElementById("jokeImage").src = "sly.png";
 
   // Add animation using JavaScript
   const punchline = document.getElementById("punchline");

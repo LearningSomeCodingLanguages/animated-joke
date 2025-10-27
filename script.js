@@ -48,8 +48,7 @@ document.getElementById("resetButton").addEventListener("click", function() {
   const Jork = document.getElementById('Jork');
   Jork.classList.remove('fade-in');
   Jork.classList.add('fade-out');
-  
-  // Optionally, you can remove the image after fading out
+
   setTimeout(() => {
     Jork.remove();
   }, 2000); // Wait for fade-out to complete

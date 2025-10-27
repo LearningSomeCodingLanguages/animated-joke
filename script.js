@@ -1,5 +1,3 @@
-let isVisible = false; // Track visibility state
-
 document.getElementById("showPunchline").addEventListener("click", function() {
   // Play the audio
   const audio = document.getElementById("calling");
@@ -25,22 +23,12 @@ document.getElementById("showPunchline").addEventListener("click", function() {
     punchline.style.color = "#2e8b57";
   }, 1500);
 
-  // Show or hide John Pork image
-  const Jork = document.getElementById('Jork');
-  
-  if (!isVisible) {
-    Jork.classList.add('fade-in'); // Fade in the image
-    Jork.style.display = 'block'; // Make it visible
-    isVisible = true; // Update visibility state
+  // Make the button invisible
+  const button = document.getElementById("showPunchline");
+  button.style.visibility = 'hidden'; // Hide the button
 
-    // Set a timeout to start the fade-out after the image has been visible for 10 seconds
-    setTimeout(() => {
-      Jork.classList.remove('fade-in'); // Remove the class for fading in
-      Jork.classList.add('fade-out'); // Add the class for fading out
-      setTimeout(() => {
-        Jork.style.display = 'none'; // Hide the image after fading out
-      }, 2000); // Wait for fade-out duration
-      isVisible = false; // Update visibility state
-    }, 10000); // Wait 10000 milliseconds (10 seconds)
-  }
+  // Set a timeout to make the button visible again after 10 seconds
+  setTimeout(() => {
+    button.style.visibility = 'visible'; // Show the button again
+  }, 10000); // Wait 10000 milliseconds (10 seconds)
 });

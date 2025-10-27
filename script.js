@@ -25,9 +25,17 @@ document.getElementById("showPunchline").addEventListener("click", function() {
     punchline.style.color = "#2e8b57";
   }, 1500);
 
+// Hide the button immediately after it's clicked
+document.getElementById("showPunchline").classList.add("hidden");
+
+// Set a timeout to make the button reappear after 10 seconds
+setTimeout(() => {
+    document.getElementById("showPunchline").classList.remove("hidden");
+}, 10000); // 10000 milliseconds = 10 seconds
+
   // Show or hide John Pork image
   const Jork = document.getElementById('Jork');
-  
+
   if (!isVisible) {
     Jork.classList.add('fade-in'); // Fade in the image
     Jork.style.display = 'block'; // Make it visible

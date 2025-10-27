@@ -33,4 +33,15 @@ button:hover {
   color: #2e8b57;
   transition: transform 1s, color 1s;
 }
+#Jork {
+  opacity: 0;
+  transition: opacity 2s ease-in-out; 
+}
 
+#myImage.fade-in {
+  opacity: 1;
+}
+
+#myImage.fade-out {
+  opacity: 0; 
+}

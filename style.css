@@ -57,7 +57,10 @@ button:hover {
   opacity: 0;
   transition: opacity 2s ease-in-out;
   display: block; /* Ensures the image takes up space */
-  margin-top: 10px; /* Adds some space below the button */
+  position: absolute; /* Position the image absolutely */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust for the image's width */
+  top: 100px; /* Position it below the button */
 }
 
 #Jork.fade-in {

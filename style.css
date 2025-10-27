@@ -6,6 +6,7 @@ body {
 
 .container {
   margin-top: 50px;
+  position: relative; /* Add this to allow absolute positioning of children */
 }
 
 button {
@@ -18,6 +19,8 @@ button {
   background-color: #2196f3;
   color: white;
   transition: background-color 0.3s;
+  position: relative; /* Ensure button is part of the positioning context */
+  z-index: 1; /* Ensure button is above the image */
 }
 
 button:hover {
@@ -60,9 +63,7 @@ button:hover {
   position: absolute; /* Position the image absolutely */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Adjust for the image's width */
-  top: 100px; /* Position it below the button */
-}
-  #Jork [
+  top: 150px; /* Position it below the button */
   pointer-events: none; /* This will allow clicks to pass through */
 }
 

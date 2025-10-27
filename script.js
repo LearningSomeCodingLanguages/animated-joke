@@ -27,9 +27,9 @@ document.getElementById("showPunchline").addEventListener("click", function() {
   const Jork = document.getElementById('Jork');
   Jork.classList.add('fade-in');
 
-  // Set a timeout to start the fade-out after the image has been visible for a while
+  // Set a timeout to start the fade-out after the image has been visible for 10 seconds
   setTimeout(() => {
     Jork.classList.remove('fade-in'); // Remove the class for fading in
     Jork.classList.add('fade-out');  // Add the class for fading out
-  }, 2000); // Wait 2000 milliseconds (2 seconds)
+  }, 10000); // Wait 10000 milliseconds (10 seconds)
 });

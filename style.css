@@ -35,7 +35,9 @@ button:hover {
 }
 #Jork {
   opacity: 0;
-  transition: opacity 2s ease-in-out; 
+  transition: opacity 2s ease-in-out;
+  display: block; /* Ensures the image takes up space */
+  margin-top: 10px; /* Adds some space below the button */
 }
 
 #Jork.fade-in {
@@ -43,5 +45,5 @@ button:hover {
 }
 
 #Jork.fade-out {
-  opacity: 0; 
+  opacity: 0;
 }

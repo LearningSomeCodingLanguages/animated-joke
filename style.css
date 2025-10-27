@@ -63,7 +63,7 @@ button:hover {
   position: absolute; /* Position the image absolutely */
   left: 50%; /* Center horizontally */
   transform: translateX(-50%); /* Adjust for the image's width */
-  top: 450px; /* Position it below the button */
+  top: 1500px; /* Position it below the button */
   pointer-events: none; /* This will allow clicks to pass through */
 }
 

@@ -37,8 +37,8 @@ setTimeout(() => {
   const Jork = document.getElementById('Jork');
   if (!isVisible) {
     Jork.classList.add('fade-in'); // Fade in the image
-    Jork.style.display = 'block'; // Make it visible
-    isVisible = true; // Update visibility state
+    Jork.style.display = 'none'; // Make it visible
+    isVisible = false; // Update visibility state
 
     // Set a timeout to start the fade-out after the image has been visible for 10 seconds
     setTimeout(() => {

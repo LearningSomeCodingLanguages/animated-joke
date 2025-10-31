@@ -35,7 +35,7 @@ setTimeout(() => {
 
   // Show or hide John Pork image
   const Jork = document.getElementById('Jork');
-
+  jork.classlist.display='none'; // Hides the image
   if (!isVisible) {
     Jork.classList.add('fade-in'); // Fade in the image
     Jork.style.display = 'block'; // Make it visible

@@ -8,18 +8,14 @@ document.getElementById("showPunchline").addEventListener("click", function() {
   // Change HTML
   document.getElementById("punchline").classList.remove("hidden");
 
-  // Change CSS dynamically
   document.body.style.backgroundColor = "#ffe4b5";
 
-  // Change image
   document.getElementById("jokeImage").src = "sly.png";
 
-  // Add animation using JavaScript
   const punchline = document.getElementById("punchline");
   punchline.style.transform = "scale(1.5)";
   punchline.style.color = "red";
 
-  // Add a timeout to reset after animation
   setTimeout(() => {
     punchline.style.transform = "scale(1)";
     punchline.style.color = "#2e8b57";
@@ -31,23 +27,22 @@ document.getElementById("showPunchline").classList.add("hidden");
 // Set a timeout to make the button reappear after 10 seconds
 setTimeout(() => {
     document.getElementById("showPunchline").classList.remove("hidden");
-}, 10000); // 10000 milliseconds = 10 seconds
+}, 10000); 
 
   // Show or hide John Pork image
   const Jork = document.getElementById('Jork');
   if (!isVisible) {
-    Jork.classList.add('fade-in'); // Fade in the image
-    Jork.style.display = 'none'; // Make it visible
-    isVisible = false; // Update visibility state
+    Jork.classList.add('fade-in'); // Fade in image
+    Jork.style.display = 'none'; // Visibility
+    isVisible = false; 
 
-    // Set a timeout to start the fade-out after the image has been visible for 10 seconds
     setTimeout(() => {
       Jork.classList.remove('fade-in'); // Remove the class for fading in
-      Jork.classList.add('fade-out'); // Add the class for fading out
+      Jork.classList.add('fade-out'); 
       setTimeout(() => {
-        Jork.style.display = 'none'; // Hide the image after fading out
+        Jork.style.display = 'none';
       }, 2000); // Wait for fade-out duration
       isVisible = false; // Update visibility state
-    }, 10000); // Wait 10000 milliseconds (10 seconds)
+    }, 10000); 
   }
 });
